@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9ov-Ta-wBe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3rQ-LO-2z8">
+            <objects>
+                <viewController id="9ov-Ta-wBe" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oep-pu-CEJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmr-7i-73a">
+                                <rect key="frame" x="143.5" y="569" width="88" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hs8-MC-h0d"/>
+                                </constraints>
+                                <state key="normal" title="Authenticate"/>
+                                <connections>
+                                    <action selector="showAuth" destination="9ov-Ta-wBe" eventType="touchUpInside" id="NGn-f9-VM4"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="aTg-kv-pON">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Token: " textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcu-3Y-APr">
+                                <rect key="frame" x="20" y="50" width="335" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="Uai-AU-dU2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aTg-kv-pON" firstAttribute="centerY" secondItem="Oep-pu-CEJ" secondAttribute="centerY" id="2Pv-D5-rc3"/>
+                            <constraint firstItem="CDJ-fC-KEY" firstAttribute="trailing" secondItem="jcu-3Y-APr" secondAttribute="trailing" constant="20" id="Bph-mE-ohG"/>
+                            <constraint firstItem="aTg-kv-pON" firstAttribute="centerX" secondItem="Oep-pu-CEJ" secondAttribute="centerX" id="C1Z-4B-BDC"/>
+                            <constraint firstItem="jcu-3Y-APr" firstAttribute="top" secondItem="CDJ-fC-KEY" secondAttribute="top" constant="30" id="a53-hm-qlv"/>
+                            <constraint firstItem="CDJ-fC-KEY" firstAttribute="bottom" secondItem="wmr-7i-73a" secondAttribute="bottom" constant="68" id="gAA-nn-mzk"/>
+                            <constraint firstItem="wmr-7i-73a" firstAttribute="centerX" secondItem="Oep-pu-CEJ" secondAttribute="centerX" id="qXE-9k-Cag"/>
+                            <constraint firstItem="jcu-3Y-APr" firstAttribute="leading" secondItem="CDJ-fC-KEY" secondAttribute="leading" constant="20" id="ysp-0q-AaA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CDJ-fC-KEY"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressLabel" destination="jcu-3Y-APr" id="RGB-K3-fuU"/>
+                        <outlet property="spinner" destination="aTg-kv-pON" id="xeK-9T-5jz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYi-Tj-r52" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="98.50074962518741"/>
+        </scene>
+    </scenes>
+</document>
