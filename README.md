@@ -19,7 +19,7 @@ The base class for handling [OAuth2](https://www.oauth.com/oauth2-servers/oauth2
 ## Installation
 ### Manually
 
-N8iveKit can be integrated manually into your project, dependency managers support coming soon.
+OAuthKit can be integrated manually into your project, dependency managers support coming soon.
 
 
 
@@ -63,4 +63,4 @@ Included Example app shows how to configure and use OAuthKit.
 
 ## License
 
-N8iveKit is released under the MIT license. [See LICENSE](https://github.com/n8iveapps/N8iveKit/blob/master/LICENSE) for details.
+OAuthKit is released under the MIT license. [See LICENSE](https://github.com/n8iveapps/N8iveKit/blob/master/LICENSE) for details.
