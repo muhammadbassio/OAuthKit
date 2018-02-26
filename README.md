@@ -63,4 +63,4 @@ Included Example app shows how to configure and use OAuthKit.
 
 ## License
 
-OAuthKit is released under the MIT license. [See LICENSE](https://github.com/n8iveapps/N8iveKit/blob/master/LICENSE) for details.
+OAuthKit is released under the MIT license. [See LICENSE](https://github.com/muhammadbassio/OAuthKit/blob/master/LICENSE) for details.
